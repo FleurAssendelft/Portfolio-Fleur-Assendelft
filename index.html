@@ -22,14 +22,20 @@
 
 	<div class="informatie">
 		<div>
-			<img id="profielfoto" src="afbeeldingen/fleur.jpg">
+			<!--<img id="profielfoto" src="afbeeldingen/fleur.jpg">-->
 		</div>
 		<div>
-			<h3>About Me</h3>
+			<h3>Hi i'm Fleur</h3>
 			<p id="over">
-				My name is Fleur Assendelft. I am born and raised in Hillegom, a small town in Zuid-Holland. I live here with my parents, brother and cat. 
+				My name is Fleur Assendelft. I am born and raised in Hillegom, a small town in Zuid-Holland. I live here with my parents, brother and cat. Every saturday I work in a cheeseshop in Noordwijkerhout.
 				<br><br>
-				Currently, I am in my second year of Cummunication and Multimedia Design. I get educated to become an Interaction Designer. During this journy I created a passion for coding and designing. I love the create a design that the client loves and that works on all devices.
+				I am a spontaneous, creative, curious and a real teamplayer. I love cooking, baking, photography and I adore animals. In my free time I like to spend time with my friends and family. 
+				<br><br>
+				Currently, I am in my second year of Cummunication and Multimedia Design. I get educated to become an Interaction Designer. During this journy I created a passion for coding and designing. I love to create a design that the client loves and that works on all devices.
+				
+				
+
+
 
 				<!--front end developer & designer-->
 			</p>
@@ -57,9 +63,20 @@
 
 	<div class="projecten">
 		<h3>Projects</h3>
-		<p id="werk">
-			Mijn werk
-		</p>
+		<div id="werk">
+			<p>Jewelste</p>
+		</div>
+
+		<div id="werk">
+			<p>Museon</p>
+		</div>
+
+		<div id="werk">
+			<p>Haga ziekenhuis</p>
+		</div>
+		<div id="werk">
+			<p>Responsive website</p>
+		</div>
 	</div>
 
 	
@@ -77,5 +94,28 @@
 		<p id="made"> &#9400; 2018 Fleur Assendeflt</p>
 		<!--<a href="#" TARGET="_blank" class="fa fa-pinterest"></a>-->
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
 </body>
 </html>
