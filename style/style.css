@@ -132,6 +132,7 @@ kopjes
     opacity: 0.8;
     color: black;
     background-color: white;
+    transition: 0.5s ease-in-out;
 }
 
 .fa-facebook, .fa-linkedin, .fa-instagram, .fa-pinterest{
