@@ -80,32 +80,93 @@ kopjes
 	margin-bottom: 2%;
 }
 
+.projecten{
+	display: flex;
+	flex-wrap: wrap;
+}
+.projecten > div{
+	width: 20%;
+	margin: 1%;
+}
+
 
 /* -------------------------------------------------------------------
 over mij
 ------------------------------------------------------------------- */
 #profielfoto{
-	width: 100%;
+	width: 20%;
 	text-align: center;
 	padding-bottom: 2%;
 }
 
 .informatie{
 	display: flex;
+	flex-wrap: wrap;
 }
 
+/* -------------------------------------------------------------------
+over mij
+------------------------------------------------------------------- */
+
+.container {
+    width: 100%;
+    z-index: 1;
+}
+
+.image {
+  opacity: 1;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  padding-left: 6%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #F08289;
+  color: white;
+  font-family: avenir;
+  font-size: 16px;
+
+}
+
+.doorlink {
+	color: white;
+}
+
+.doorlink:hover{
+	color: #FFE4E1;
+}
 
 /* -------------------------------------------------------------------
 tools
 ------------------------------------------------------------------- */
 .icon{
-	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .tools{
 	display: flex;
 	flex-wrap: wrap;
 }
+
 
 /* -------------------------------------------------------------------
 kopjes 
