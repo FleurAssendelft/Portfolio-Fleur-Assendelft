@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="afbeeldingen/rond.png">
 	<title>Portfolio Fleur Assendelft</title>
 </head>
 <body>
@@ -14,7 +15,6 @@
 			<li><a id="nav" href="#over"> Over mij </a></li>	
 			<li><a id="nav" href="#tool"> Toolkit </a></li>
 			<li><a id="nav" href="#werk"> Mijn werk </a></li>
-			<li><a id="nav" href="#fotografie"> Fotografie </a></li>
 		</div>
 
 
@@ -24,79 +24,78 @@
 		</div>
 
 		<div class="informatie">
-			<div>
-				<img id="profielfoto" src="afbeeldingen/ik.JPG">
+			<div class="foto">
+				<img id="profielfoto" src="afbeeldingen/rond.png">
 			</div>
-			<div>
+			
+			<div class="tekst">
 				<h3>Hi i'm Fleur</h3>
 				<p id="over">
 					My name is Fleur Assendelft. I am born and raised in Hillegom, a small town in Zuid-Holland. I live here with my parents, brother and cat. Every saturday I work in a cheeseshop in Noordwijkerhout.
 					<br><br>
 					I am a spontaneous, creative, curious and a real teamplayer. I love cooking, baking, photography and I adore animals. In my free time I like to spend time with my friends and family. 
 					<br><br>
-					Currently, I am in my second year of Cummunication and Multimedia Design. I get educated to become an Interaction Designer. During this journy I created a passion for coding and designing. I love to create a design that the client loves and that works on all devices.
+					Currently, I am in my second year of Cummunication and Multimedia Design. I get educated to become an Interaction Designer. During this journey I created a passion for coding and designing. I love to create a design that the client loves and that works on all devices.
 					
-					
-
-
-
 					<!--front end developer & designer-->
 				</p>
 			</div>
 		</div>
 
-		<div class="tools">
-			<h3 id="tool">Tools</h3>
-			<p >
-				In the process of making product I use several tools
-				<br>
-				<img class="icon" src="afbeeldingen/coding.svg">
-				Coding
-			</p>
-			<p>
-				<img class="icon" src="afbeeldingen/camera.svg">	
-				Photography
-			</p>
+
+		<div class="tools" id="tool">
+			<div class="programming" id="tekst">
+				<p>
+					Ik heb een passie ontwikkeld voor programmeren. Ik vind het heel leuk om van je eigen code een website te maken hoe jij dit wilt. Dit doe ik aan de hand van HTML, CSS en JavaScript. Ook kan ik de programmeer taal Python toepassen, dit heb ik geleerd tijdens de studie Bio-Informatie die ik 1 jaar heb gevolgd.
+				</p>
+			</div>
+	
+			<div class="adobe" id="tekst">
+				<p>
+					Op school heb ik les gekregen in verschillende programma's van adobe. Ik heb kennis gemaakt met Adobe illustrator voor het maken van logo's. Adobe Indesign voor het maken van hi-fi prototypes van apps. 
+				</p>
+			</div>
 			
-			<p>
-				<img class="icon" src="afbeeldingen/camera.svg">
-				Adob
-			</p>
+			<div class="fotografie" id="tekst">
+				<p>
+					Ik heb altijd al een passie gehad voor fotografie en tijdens mijn minor heb ik mij hier meer ik kunnen verdiepen. Hier heb ik mijn camera meer leren begrijpen. Ook heb ik leren werken met de programma's lightroom en photoshop van Adobe.
+				</p>
+			</div>
 		</div>
 		
 		
-		<div class="projecten">
-			<h3>Projects</h3>
-
-			<div class="container">
-  				<a class="doorlink" href="projecten/jewelste.html"><img src="afbeeldingen/jewelste.png"  class="image" ></a>
- 				 <div class="middle">Jewelste
-  				</div>
+		<div class="projecten" id="werk">
+			
+			<div class="jewelste">
+				<img  class="foto_project" src="afbeeldingen/jewelste_app.png">
+				<!-- <a href="projecten/jewelste.html">jeGeweldigste</a> -->
+				<h4>jeGeweldigste</h4>
+				<p class="uitleg">
+					De Jegeweldigste app is een opdracht in samenwerking met de opdrachtgeven Jewelste. Jewelste is een coverband die optreed..
+				</p>
+			</div>
+			
+			<div class="minor">
+				<img class="foto_project" src="afbeeldingen/fotografie_minor.png">
+				<h4>Minor Fotografie</h4>
+				<p class="uitleg">
+					In mijn tweede studiejaar heb ik de minor Fotografie gevolgd. Dit duurde 10 weken en in die 10 weken heb ik mijn camera heel goed leren kennen.
+				</p>
 			</div>
 
-			<div class="container">
-  				<a class="doorlink" href="projecten/jewelste.html"><img src="app.png" alt="Avatar" class="image" ></a>
- 				 <div class="middle">
-  				</div>
+			<div class="voorall">
+				<img class="foto_project" src="afbeeldingen/fotografie_minor.png">
+				<h4>VoorAll</h4>
+				<p class="uitleg">
+					De VoorAll app is een applicatie voor blinden en slechtzienden.
+				</p>
 			</div>
-
-			<div class="container">
-  				<a class="doorlink" href="projecten/jewelste.html"><img src="app.png" alt="Avatar" class="image" ></a>
- 				 <div class="middle">
-  				</div>
-			</div>
-
-			<div class="container">
-  				<a class="doorlink" href="projecten/jewelste.html"><img src="app.png" alt="Avatar" class="image" ></a>
- 				 <div class="middle">
-  				</div>
-			</div>
-
+			
 		</div>
 
 		
 
-		<div class="fotografie">
+		<!--<div class="fotografie">
 			<h3>Fotografie</h3>
 			<p id="fotografie">
 				<iframe src="afbeeldingen/fotoboek_Fleur_Assendelft.pdf">
@@ -104,7 +103,7 @@
 				</iframe>
 
 			</p>
-		</div>
+		</div>-->
 
 		<div class="footer">
 			<a href="https://www.facebook.com/fleur.assendelft.1" TARGET="_blank" class="fa fa-facebook"></a>
@@ -138,5 +137,6 @@
                 });
             });
         </script>
+        <script src="javascript/main.js"></script>
 </body>
 </html>

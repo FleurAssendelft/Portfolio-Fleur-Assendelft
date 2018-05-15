@@ -14,7 +14,6 @@ body{
 }
 
 
-
 /* -------------------------------------------------------------------
 hoofdstukken
 ------------------------------------------------------------------- */
@@ -32,8 +31,16 @@ h2{
 
 h3{
 	font-family: 'Khula', sans-serif;
+	font-size: 16px;
 	text-transform: uppercase;
 	margin: 0px;
+}
+
+h4{
+	font-family: 'Avenir', serif;
+	font-size: 14px;
+	margin: 0px;
+	padding-top: 2%;
 }
 
 p{
@@ -50,7 +57,6 @@ li{
 }
 
 
-
 a#nav{
 	text-decoration: none;
 	color: black;
@@ -62,109 +68,91 @@ a#nav:hover{
 	transition: 0.2s ease-in-out;
 }
 
-/* -------------------------------------------------------------------
-paragraaf
-------------------------------------------------------------------- */
-
-#over, #werk, #tool, #fotografie{
-	margin: 0px;
-	text-align: inherit;
+.navigatie{
+	display: flex;
+	flex-direction: column;
 }
+
+
+
 
 /* -------------------------------------------------------------------
 kopjes 
-------------------------------------------------------------------- */
-.informatie, .projecten, .tools,  .fotografie{
+------------------------------------------------------------------- 
+.informatie, .projecten, .tools,  {
 	background-color: rgba(255,255,255, 0.5);
 	padding: 2%;
 	margin-bottom: 2%;
-}
+}*/
 
-.projecten{
-	display: flex;
-	flex-wrap: wrap;
-}
-.projecten > div{
-	width: 20%;
-	margin: 1%;
-}
+
 
 
 /* -------------------------------------------------------------------
 over mij
 ------------------------------------------------------------------- */
 #profielfoto{
-	width: 20%;
-	text-align: center;
-	padding-bottom: 2%;
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
 }
 
 .informatie{
+	background-color: white;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;	
 }
+
+
 
 /* -------------------------------------------------------------------
 over mij
 ------------------------------------------------------------------- */
-
-.container {
-    width: 100%;
-    z-index: 1;
-}
-
-.image {
-  opacity: 1;
-  width: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  padding-left: 6%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #F08289;
-  color: white;
-  font-family: avenir;
-  font-size: 16px;
-
-}
-
-.doorlink {
-	color: white;
-}
-
-.doorlink:hover{
-	color: #FFE4E1;
+#over{
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: left;
 }
 
 /* -------------------------------------------------------------------
 tools
 ------------------------------------------------------------------- */
-.icon{
-	display: flex;
-	flex-wrap: wrap;
-}
 
 .tools{
-	display: flex;
-	flex-wrap: wrap;
+	background-color: white;
+}
+
+#tekst{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+/* -------------------------------------------------------------------
+projecten
+------------------------------------------------------------------- */
+
+.projecten{
+	
+}
+
+.foto_project{
+	width: 100%;
+}
+
+.uitleg{
+	text-align: left;
+}
+
+.jewelste, .minor, .voorall{
+	text-align: center;
+	background-color: white;
+	/*margin-left: 5%;
+	margin-right: 5%;*/
+}
+
+#header{
+	width: 100%;
 }
 
 
@@ -216,13 +204,17 @@ iframe{
 
 @media only screen and (min-width: 500px) {
 
-	li{
-		display: inline-block;
-		padding-right: 2%;
+
+}
+
+@media only screen and (min-width: 725px) {
+	.informatie{
+		display: flex;
+		flex-direction: row;
 	}
 
-	.naam{
-		margin-top: 10%;
+	#profielfoto{
+		height: 100%;
 	}
 
 	.navigatie{
@@ -230,21 +222,18 @@ iframe{
 		text-align: right;
 		position: fixed;
 		width: 98%;
-		margin-top: -10%;
 		padding: 1%;
+		display: flex;
+		flex-direction: row;
+	}
 
+	.informatie{
+		max-height: 600px;
 	}
 
 }
 
-@media only screen and (min-width: 725px) {
-
-	}
-
 @media only screen and (min-width: 1032px) {
-	.navigatie{
-		padding: 0.25%;
-	}
 	}
 
 

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+@import url('https://fonts.googleapis.com/css?family=Lustria');
+@import url('https://fonts.googleapis.com/css?family=Khula:300');
+@import url('https://fonts.googleapis.com/css?family=Khula:600');
+
+body{
+	background-image: url("../afbeeldingen/golven.jpeg");
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	margin: 0px;
+  	padding: 0px;
+}
+
+/*.page{
+	display: grid;
+	grid-template-areas:
+		"navigatie"
+		"naam"
+		"foto"
+		"tekst"
+		"programming"
+		"adobe"
+		"fotografie"
+		"jewelste"
+		"minor"
+		"footer";
+}
+
+.navigatie{
+	grid-area: navigatie;
+}
+
+.naam{
+	grid-area: naam;
+}
+
+.foto{
+	grid-area: foto;
+}
+
+.tekst{
+	grid-area: tekst;
+}
+
+.programming{
+	grid-area: programming;
+}
+
+.adobe{
+	grid-area: adobe;
+}
+
+.fotografie{
+	grid-area: fotografie;
+}
+
+.jewelste{
+	grid-area: jewelste;
+}
+
+.minor{
+	grid-area: minor;
+}
+
+.footer{
+	grid-area: footer;
+}*/
+/* -------------------------------------------------------------------
+hoofdstukken
+------------------------------------------------------------------- */
+h1{
+	font-family: 'Arapey', serif;
+	font-size: 50px;
+	text-align: center;
+	margin: 0px;
+}
+h2{
+	font-family: 'Lustria', serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+h3{
+	font-family: 'Khula', sans-serif;
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+p{
+	font-family: 'Khula', sans-serif;
+}
+
+/* -------------------------------------------------------------------
+navigatie
+------------------------------------------------------------------- */
+li{
+	list-style-type: none;
+	font-family: 'Khula', sans-serif;
+	text-align: center;	
+}
+
+
+a#nav{
+	text-decoration: none;
+	color: black;
+	
+}
+
+a#nav:hover{
+	color: rgb(0, 153, 255);
+	transition: 0.2s ease-in-out;
+}
+
+.navigatie{
+	display: flex;
+	flex-direction: column;
+}
+
+/* -------------------------------------------------------------------
+paragraaf
+------------------------------------------------------------------- */
+.informatie{
+	background-color: pink;
+	display: flex;
+	flex-direction: column;	
+}
+
+
+.tools{
+	background-color: blue;
+}
+
+.projecten{
+	background-color: green;
+}
+
+/* -------------------------------------------------------------------
+kopjes 
+------------------------------------------------------------------- 
+.informatie, .projecten, .tools,  {
+	background-color: rgba(255,255,255, 0.5);
+	padding: 2%;
+	margin-bottom: 2%;
+}*/
+
+
+
+
+/* -------------------------------------------------------------------
+over mij
+------------------------------------------------------------------- */
+#profielfoto{
+	width: 90%;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+
+
+/* -------------------------------------------------------------------
+over mij
+------------------------------------------------------------------- 
+
+.container {
+    width: 100%;
+    z-index: 1;
+}
+
+.image {
+  opacity: 1;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  padding-left: 6%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #F08289;
+  color: white;
+  font-family: avenir;
+  font-size: 16px;
+
+}
+
+.doorlink {
+	color: white;
+}
+
+.doorlink:hover{
+	color: #FFE4E1;
+}*/
+
+/* -------------------------------------------------------------------
+tools
+------------------------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------------------------
+kopjes 
+------------------------------------------------------------------- */
+.footer{
+	background-color: white;
+	margin: 0px;
+	padding-top: 2%;
+	padding-bottom: 0px;
+	border: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.8;
+    color: black;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.fa-facebook, .fa-linkedin, .fa-instagram, .fa-pinterest{
+  background: black;
+  color: white;
+}
+
+#made{
+	margin: 0px;
+	padding: 1%;
+}
+
+/* -------------------------------------------------------------------
+fotografie
+------------------------------------------------------------------- */
+iframe{
+	width: 100%;
+	height: 75vh;
+}
+
+@media only screen and (min-width: 500px) {
+/*
+	li{
+		display: inline-block;
+		padding-right: 2%;
+	}
+
+	.naam{
+		margin-top: 10%;
+	}*/
+
+
+
+}
+
+@media only screen and (min-width: 725px) {
+	.informatie{
+	background-color: pink;
+	display: flex;
+	flex-direction: row;
+	}
+
+	.navigatie{
+		background-color: rgba(255,255,255, 0.5);
+		text-align: right;
+		position: fixed;
+		width: 98%;
+		padding: 1%;
+		display: flex;
+		flex-direction: row;
+	}
+	/*.page{
+		grid-template-areas:
+			"navigatie 		navigatie"
+			"naam 			naam"
+			"foto 			tekst"
+			"programming 	programming"
+			"adobe 			adobe"
+			"fotografie 	fotografie"
+			"jewelste 		jewelste"
+			"minor 			minor"
+			"footer 		footer";
+	}*/
+
+}
+
+@media only screen and (min-width: 1032px) {
+	}
+
+
+
+
