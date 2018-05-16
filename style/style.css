@@ -142,6 +142,19 @@ kopjes
 	color: white;
 }
 
+.achtergrond4{
+	background-image: url(../afbeeldingen/booty.png);
+	background-size: 100%;
+	max-height: 40%;
+	width: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: black;
+	padding-top: 40%;
+	padding-bottom: 1%;
+	color: white;
+}
+
 
 
 
@@ -243,13 +256,7 @@ projecten
 	flex-direction: column;
 }
 
-.uitleg{
 
-}
-
-.details{
-
-}
 
 
 /* -------------------------------------------------------------------
@@ -366,6 +373,11 @@ media queries
 	display: flex;
 	flex-direction: row;
 }
+
+	.beschrijving{
+		width: 65%;
+	}
+
 
 	.achtergrond3{
 		padding-top: 40%;
