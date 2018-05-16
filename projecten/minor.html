@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="../afbeeldingen/rond.png">
+	<title>Portfolio Fleur Assendelft</title>
+</head>
+<body>
+
+	<div class="page">
+		<!-- <div class="navigatie">
+			<li><a id="nav" href="index.html#over"> Over mij </a></li>	
+			<li><a id="nav" href="#tool"> Toolkit </a></li>
+			<li><a id="nav" href="#werk"> Mijn werk </a></li>
+			<li><a id="nav" href="#fotografie"> Fotografie </a></li>
+		</div> -->
+
+
+		<div class="achtergrond3">
+			<!-- <div class="naam">
+				<h1>Jewelste</h1>
+				<h2>Interaction Design & Photography</h2>
+			</div> -->
+		</div>
+
+		<!-- <div>
+			<img id="header" src="../afbeeldingen/jewelste_info.png">
+		</div> -->
+
+		<div>
+			<h6>Minor fotografie</h6>
+		</div>
+		
+		<div class="omschrijving">
+			<div class="beschrijving">
+			<h5>Beschrijving</h5>
+			<p class="uitleg">
+				In mijn tweede studiejaar heb ik de minor Fotografie gevolgd. Dit duurde 10 weken en in die 10 weken heb ik mijn camera heel goed leren kennen. Wij zijn bezig geweest met 5 verschillende onderwerpen: textuur & ritme, film still, bodyscape, time en een vrije opdracht.
+			</p>
+			</div>
+
+			<div class="details">
+				<h5>Categorie</h5>
+				<p class="uitleg">
+					Fotografie
+				</p>
+
+				<h5>Periode</h5>
+				<p class="uitleg">
+					Minor, november 2017 - januari 2018
+				</p>
+
+				<h5>Tools</h5>
+				<p class="uitleg">
+					Spiegelreflex camera (canon 1200D)<br>
+					Lightroom<br>
+					Photoshop<br>
+					InDesign
+				</p>
+			</div>
+			
+		</div>
+
+
+		
+
+		
+
+		<div class="footer">
+			<a href="https://www.facebook.com/fleur.assendelft.1" TARGET="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.linkedin.com/in/fleur-assendelft-0b4103153/" TARGET="_blank" class="fa fa-linkedin"></a>
+			<a href="https://www.instagram.com/fleurassendelft/" TARGET="_blank" class="fa fa-instagram"></a>
+			<p id="made"> &#9400; 2018 Fleur Assendeflt</p>
+			<!--<a href="#" TARGET="_blank" class="fa fa-pinterest"></a>-->
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+</body>
+</html>
