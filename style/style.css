@@ -5,10 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Khula:600');
 
 body{
-	background-image: url("../afbeeldingen/golven.jpeg");
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
+	
   	margin: 0px;
   	padding: 0px;
 }
@@ -34,6 +31,8 @@ h3{
 	font-size: 16px;
 	text-transform: uppercase;
 	margin: 0px;
+	text-align: center;
+	padding-top: 7%;
 }
 
 h4{
@@ -44,7 +43,7 @@ h4{
 }
 
 p{
-	font-family: 'Khula', sans-serif;
+	font-family: 'Avenir' ;
 }
 
 /* -------------------------------------------------------------------
@@ -85,6 +84,18 @@ kopjes
 	margin-bottom: 2%;
 }*/
 
+.achtergrond{
+	background-image: url(../afbeeldingen/golven.jpeg);
+	background-size: 100%;
+	height: 20%;
+	width: 100%;
+	background-attachment: fixed;
+	color: black;
+	padding-top: 15%;
+	padding-bottom: 5%;
+}
+
+
 
 
 
@@ -92,7 +103,7 @@ kopjes
 over mij
 ------------------------------------------------------------------- */
 #profielfoto{
-	width: 90%;
+	width: 80%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -111,8 +122,8 @@ over mij
 over mij
 ------------------------------------------------------------------- */
 #over{
-	padding-left: 2%;
-	padding-right: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
 	text-align: left;
 }
 
@@ -122,12 +133,23 @@ tools
 
 .tools{
 	background-color: white;
+	display: flex;
+	flex-direction: column;	
+}
+#toolIcon{
+	width: 25%;
+}
+#tekst{
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	text-align: center;
 }
 
-#tekst{
-	padding-left: 2%;
-	padding-right: 2%;
+.programming, .adobe, .fotografie{
+	padding-top: 10%;
+	
 }
+
 /* -------------------------------------------------------------------
 projecten
 ------------------------------------------------------------------- */
@@ -142,6 +164,9 @@ projecten
 
 .uitleg{
 	text-align: left;
+	padding-left: 2%;
+	padding-right: 2%;
+
 }
 
 .jewelste, .minor, .voorall{
@@ -214,7 +239,7 @@ iframe{
 	}
 
 	#profielfoto{
-		height: 100%;
+		max-width: 1500px;
 	}
 
 	.navigatie{
@@ -228,9 +253,31 @@ iframe{
 	}
 
 	.informatie{
-		max-height: 600px;
+		max-height: 800px;
 	}
 
+	/*tools */
+
+	.tools{
+	padding-top: 2%;
+	display: flex;
+	flex-direction: row;	
+	}
+	
+	#toolIcon{
+	height: 20%;
+	}
+
+	#tekst{
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align: center;
+	}
+
+	.programming, .adobe, .fotografie{
+		padding-top: 10%;
+		
+	}
 }
 
 @media only screen and (min-width: 1032px) {
