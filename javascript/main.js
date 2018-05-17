@@ -4,7 +4,7 @@ function foto(x){
 		document.getElementById('profielfoto').src = "../Portfolio-Fleur-Assendelft/afbeeldingen/rond.png";
 	}
 	else{
-		document.getElementById('profielfoto').src = "../Portfolio-Fleur-Assendelft/afbeeldingen/fleur.JPG";
+		document.getElementById('profielfoto').src = "../Portfolio-Fleur-Assendelft/afbeeldingen/fleurtje.JPG";
 	}
 }
 
