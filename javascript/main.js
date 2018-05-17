@@ -23,7 +23,7 @@ function greeting(){
         }
     }
 
-var x = window.matchMedia("(max-width: 725px)")
+var x = window.matchMedia("(max-width: 750px)")
 foto(x) // Call listener function at run time
 x.addListener(foto) // Attach listener function on state changes
 
